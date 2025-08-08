@@ -212,7 +212,7 @@ body {
 }
 
 .menu a:hover {
-  background-color: rgb(79, 192, 198);;
+  background-color: #5d3a1a;
   opacity: 0.9;
   color: white;
 }
@@ -334,7 +334,7 @@ html {
   font-size: 16px;
   max-width: 800px;
   margin: 0 auto 50px;
-  color: #444;
+  color: #5d3a1a;
 }
 
 .valores-quienes {
@@ -351,13 +351,13 @@ html {
 
 .valor i {
   font-size: 40px;
-  color: #0074a3;
+  color: #584535;
   margin-bottom: 10px;
 }
 
 .valor p {
   font-size: 15px;
-  color: #555;
+  color: #5d3a1a;
 }
 
 footer.footer {
@@ -409,7 +409,7 @@ footer.footer img.logo {
 }
 
 .tarjeta-servicio {
-  background: #fff;
+  background: #fdf5ee;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -431,7 +431,7 @@ footer.footer img.logo {
 }
 
 .tarjeta-servicio h3 {
-  color: #0074a3;
+  color: #574535;
   font-size: 20px;
   margin-bottom: 10px;
 }

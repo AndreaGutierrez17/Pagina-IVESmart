@@ -7,6 +7,44 @@ body {
   text-align: center;
 }
 
+.encabezado-servicios {
+  background-image: url('img/img2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fdf5ee;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.encabezado-servicios::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contenido-servicio {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contenido-servicio h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contenido-servicio p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
 .logo {
   height: 70px;
 }
@@ -40,7 +78,7 @@ body {
 }
 
 .menu a:hover {
-  background-color: rgb(79, 192, 198);;
+  background-color: #5d3a1a;
   opacity: 0.9;
   color: white;
 }
@@ -61,7 +99,85 @@ html {
 }
 
 #quienes-somos {
-  scroll-margin-top: 100px; /* Para que el navbar no tape la sección */
+  scroll-margin-top: 100px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf5ee;
+  color: #333;
+}
+
+/* Encabezado principal */
+.titulo-principal {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #5d3a1a;
+}
+
+/* Títulos por categoría (Odontología general, etc.) */
+.titulo-servicio {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #5d3a1a;
+}
+
+.titulo-servicio a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.titulo-servicio a:hover {
+  color: #5d3a1a;
+}
+
+/* Tarjetas */
+.tarjeta-servicio {
+  background-color: #fdf5e6;
+  border: 1px solid #d8c3a5;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Imágenes dentro de tarjetas */
+.tarjeta-servicio img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Descripción */
+.descripcion-servicio {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .titulo-servicio {
+    font-size: 1.6rem;
+  }
+
+  .tarjeta-servicio {
+    padding: 15px;
+  }
 }
 
 .location-icon {
@@ -85,8 +201,6 @@ html {
 .social-icons-fixed i {
   font-size: 28px;
 }
-
-
 /* Agregar tus estilos personalizados aquí */
  .section { margin: 20px 0; }
  .social-icons i { font-size: 30px; margin-right: 15px; }
@@ -123,3 +237,4 @@ footer.footer img.logo {
   margin: 10px auto;
   display: block;
 }
+
